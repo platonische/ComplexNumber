@@ -5,7 +5,7 @@ use ComplexNumber\ComplexNumber;
 
 function autoload($class)
 {
-	require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'ComplexNumberProject' . DIRECTORY_SEPARATOR . str_replace('\\',DIRECTORY_SEPARATOR,$class . '.php');
+	require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . str_replace('\\',DIRECTORY_SEPARATOR,$class . '.php');
 }
 spl_autoload_register('autoload');
 
